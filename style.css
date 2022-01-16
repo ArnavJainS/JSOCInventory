@@ -1,0 +1,110 @@
+/*Show Booked Inventory*/
+#showbookedinventory {
+	margin-left: 10px;
+	margin-right: 10px;
+    padding: 1px;
+}
+/*Return Inventory*/
+#returninventory {
+	margin-left: auto;
+	margin-right: auto;
+  padding: 1px;
+}
+
+/*Google Form*/
+#googleForm {
+	margin-left: auto;
+	margin-right: auto;
+  padding: 1px;
+}
+
+/*Table styling*/
+table, td {
+  border-collapse: collapse;
+  border: 2px solid black;
+}
+
+/* Navigation Menu */
+
+.mainmenu ul {
+    list-style-type: none;
+    padding: 1px;
+    margin: 5;
+    background: #fc8b00;
+}
+
+.mainmenu li {
+    display: inline;
+}
+
+.mainmenu a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #FFF;
+    background: #fc5400;
+    display: inline-block;
+    padding: .05em 1em;
+    text-align: center;
+    margin: 10px;
+}
+
+.mainmenu a:hover {
+    background: #fc8b00;
+}
+
+/* Responsive Design */
+
+/* Large tablets, smaller desktop/laptop screens */
+@media (max-width: 979px) {
+    .design {
+        float: none;
+        width: auto;
+        min-height: auto;
+    }
+}
+
+/*Smaller tablets, larger phone screens in landscape */
+@media (max-width: 767px) {
+    .design {
+        float: none;
+        width: auto;
+        min-height: auto;
+    }
+}
+
+/* Smartphones */
+@media (max-width: 480px) {
+    .design {
+        float: none;
+        width: auto;
+        min-height: auto;
+        border: none;
+    }
+}
+
+/* Print Layout */
+
+@media print {
+
+    * {
+        color: #000 !important;
+        background: #FFF !important;
+    }
+
+    nav, .end {
+        display: none;
+    }
+
+    body {
+        font-size: 14pt;
+    }
+
+    .main, .side {
+        border: none;
+        float: none;
+        width: auto;
+        height: auto;
+    }
+}
