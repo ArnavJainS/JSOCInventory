@@ -1,8 +1,97 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffc505;
+}
+/* iframe's parent node */
+div#root {
+    min-height: 100%;
+    position: fixed;
+    width: 100%;
+    
+}
+/* iframe itself */
+#iPartial { 
+    display:block;
+    width: 100%;
+    border: none;
+    position: absolute; height: 90%;
+}
+
+
+/*Navigation*/
+.topnav {
+  position: relative;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav-centered a {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.topnav-right {
+  float: right;
+}
+
+/* Responsive navigation menu (for mobile devices) */
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav-right {
+    float: none;
+    display: block;
+  }
+  
+  .topnav-centered a {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+}
+h1 {
+  text-align: center;
+}
+
+
+/* Pick Up Inventory*/
+.pickupinventory {
+  padding: 1px;
+}
+/* All Inventories */
+.allinventories {
+  padding: 1px;
+}
 /*Show Booked Inventory*/
-#showbookedinventory {
+.bookedinventory {
 	margin-left: 10px;
 	margin-right: 10px;
-    padding: 1px;
+  padding: 1px;
+  width: 100px;
+  height: 100px;
 }
 /*Return Inventory*/
 #returninventory {
@@ -23,37 +112,6 @@ table, td {
   border-collapse: collapse;
   border: 2px solid black;
 }
-
-/* Navigation Menu */
-
-.mainmenu ul {
-    list-style-type: none;
-    padding: 1px;
-    margin: 5;
-    background: #fc8b00;
-}
-
-.mainmenu li {
-    display: inline;
-}
-
-.mainmenu a {
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
-    font-family: Helvetica, Arial, sans-serif;
-    color: #FFF;
-    background: #fc5400;
-    display: inline-block;
-    padding: .05em 1em;
-    text-align: center;
-    margin: 10px;
-}
-
-.mainmenu a:hover {
-    background: #fc8b00;
-}
-
 /* Responsive Design */
 
 /* Large tablets, smaller desktop/laptop screens */
